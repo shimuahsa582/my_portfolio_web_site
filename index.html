@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website</title>
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwand cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- home section start -->
+    <header class="container mx-auto">
+        <!-- navbar section -->
+        <nav class="navbar flex justify-between items-center p-4 shadow ">
+            <h1 class="lg:text-4xl text-black font-bold">Shimu</h1>
+            <ul class="flex gap-7 cursor-pointer">
+                <li class="hover:text-blue-600"><a href="#home">Home</a></li>
+                <li class="hover:text-blue-600"><a href="#skills">Skills</a></li>
+                <li class="hover:text-blue-600"><a href="#about">About</a></li>
+                <li class="hover:text-blue-600"><a href="#project">Projects</a></li>
+                <li class="hover:text-blue-600"><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+        <!-- banner section -->
+        <div class="banner grid md:grid-cols-1 lg:grid-cols-2  justify-center items-center pt-2">
+            <div class="banner_description grid md:grid-cols-1 lg:grid-cols-2  justify-center items-center">
+                <div class="left_info pt-3 text-center">
+                    <h1 class=" author_name lg:text-6xl font-bold text-white mb-5">I'm Shimu Akter</h1>
+                    <p class="lg:text-1xl font-medium leading-[190%] text-gray-100 w-[560px] mx-auto">
+                        I
+                        am a passionate
+                        web
+                        development learner
+                        currently
+                        studying
+                        HTML, CSS and Tailwind. I enjoy building modern and
+                        responsive websites and continuously improving my programming skills.</p>
+                    <div class="btn pt-7">
+                        <button type="button"
+                            class="bg-orange-400 text-white font-semibold py-2 px-4 rounded-lg mr-3"><i
+                                class="fa-solid fa-phone"></i> Contact
+                            Me</button>
+                        <button type="button"
+                            class="bg-orange-400 text-white font-semibold py-2 px-4 rounded-lg">Dowmload
+                            CV <i class="fa-solid fa-download"></i></button>
+                    </div>
+                </div>
+                <div class="right_info items-center">
+                    <img src="image/image 12.png" alt="" class="grayscale">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- home section end -->
+    <!-- skills section start -->
+    <main class="skills container mx-auto bg-[#0A0A0A] py-20">
+        <!-- skill heading  section-->
+        <div class="skill_header block text-center py-5 mb-12">
+            <h1 class="text-5xl text-white text-center font-bold ">My Skills</h1>
+            <div class="icon flex justify-center items-center gap-2 mt-3">
+                <div class="line w-[30px] h-0.5 bg-orange-400"></div>
+                <i class="fa-solid fa-xmark text-2xl text-orange-400 font-semibold relative"></i>
+                <div class="line w-[30px] h-0.5 bg-orange-400"></div>
+            </div>
+        </div>
+        <!-- skill description and skill item section -->
+        <div
+            class="skill_description grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-around items-center gap-y-5">
+            <div class="skill_item  bg-neutral-900 p-12 w-[380px] shadow-gray-950">
+                <i class="fa-solid fa-laptop-code text-5xl text-orange-400 font-semibold py-3"></i>
+                <h3 class="text-2xl font-semibold text-white mb-3 pt-1">Coding</h3>
+                <p class="text-1xl font-light text-white py-3">Aenean pretium nulla libero, vitae iaculis libero
+                    efficitur a. Fusce ut augue finibus quam
+                </p>
+                <a href="#" class="text-orange-400 font-light ">Read More</a>
+            </div>
+            <div class="skill_item bg-neutral-900 p-12 w-[380px] shadow-gray-950">
+                <i class="fa-brands fa-uikit text-5xl text-orange-400 font-semibold py-3"></i>
+                <h3 class="text-2xl font-semibold text-white mb-3 pt-1">Web Design</h3>
+                <p class="text-1xl font-light text-white py-3">Duis molestie enim mattis gravida viverra. Fusce ut
+                    eros
+                    augue. Sed id mauris vel neque</p>
+                <a href="#" class="text-orange-400 font-light ">Read More</a>
+            </div>
+            <div class="skill_item bg-neutral-900 p-12 w-[380px] shadow-gray-950">
+                <i class="fa-brands fa-figma text-5xl text-orange-400 font-semibold py-3"></i>
+                <h3 class="text-2xl font-semibold text-white mb-3 pt-1">Basic Figma</h3>
+                <p class="text-1xl font-light text-white py-3">Duis molestie enim mattis gravida viverra. Fusce ut
+                    eros
+                    augue. Sed id mauris vel neque</p>
+                <a href="#" class="text-orange-400 font-light ">Read More</a>
+            </div>
+            <div class="skill_item bg-neutral-900 p-12 w-[380px] shadow-gray-950">
+                <i class="fa-brands fa-html5 text-5xl text-orange-400 font-semibold py-3"></i>
+                <h3 class="text-2xl font-semibold text-white mb-3 pt-1">HTML 5</h3>
+                <p class="text-1xl font-light text-white py-3">Aenean pretium nulla libero, vitae iaculis libero
+                    efficitur a. Fusce ut augue finibus quam
+                </p>
+                <a href="#" class="text-orange-400 font-light ">Read More</a>
+            </div>
+            <div class="skill_item bg-neutral-900 p-12 w-[380px] shadow-gray-950">
+                <i class="fa-brands fa-css3-alt text-5xl text-orange-400 font-semibold py-3"></i>
+                <h3 class="text-2xl font-semibold text-white mb-3 pt-1">CSS 3</h3>
+                <p class="text-1xl font-light text-white py-3">Aenean pretium nulla libero, vitae iaculis libero
+                    efficitur a. Fusce ut augue finibus quam
+                </p>
+                <a href="#" class="text-orange-400 font-light ">Read More</a>
+            </div>
+            <div class="skill_item bg-neutral-900 p-12 w-[380px] shadow-gray-950">
+                <img src="image/tailwand.svg" alt="" class=" bg-orange-400 w-11 h-11 py-3 my-3">
+                <h3 class="text-2xl font-semibold text-white mb-3 pt-1">Tailwand</h3>
+                <p class="text-1xl font-light text-white py-3">Aenean pretium nulla libero, vitae iaculis libero
+                    efficitur a. Fusce ut augue finibus quam
+                </p>
+                <a href="#" class="text-orange-400 font-light ">Read More</a>
+            </div>
+        </div>
+    </main>
+    <!-- skill section end -->
+    <!-- about section -->
+    <main class="about_section container mx-auto bg-[#0A0A0A]">
+        <!-- about header part -->
+        <div class="about_header block text-center py-5 mb-14">
+            <h1 class="text-5xl text-white text-center font-bold ">About Me</h1>
+            <div class="icon flex justify-center items-center gap-2 mt-3">
+                <div class="line w-[30px] h-0.5 bg-orange-400"></div>
+                <i class="fa-solid fa-xmark text-2xl text-orange-400 font-semibold relative"></i>
+                <div class="line w-[30px] h-0.5 bg-orange-400"></div>
+            </div>
+        </div>
+        <!-- about description part -->
+        <div class="about_description grid md:grid-cols-1 lg:grid-cols-2 justify-between items-center pb-22">
+            <div class="about_left flex justify-center items-center">
+                <img src="image/profile.jpg" alt="profile" class="h-[450px] shadow-gray-200">
+            </div>
+            <div class="about_right flex flex-col items-start justify-start">
+                <h1 class=" about_h1 text-2xl text-white font-semibold">Hi
+                    There</h1>
+                <p class="text-white font-light text-justify w-[500px] text-[18px] py-14">I’m someone who loves
+                    exploring new
+                    ideas and
+                    building
+                    things that
+                    matter. I’m always learning,
+                    growing, and
+                    challenging myself to do better every day. Thanks for stopping by and getting to know me!</p>
+                <div
+                    class="about_info flex items-center justify-around w-[500px] h-[180px] bg-neutral-900 shadow-gray-900">
+                    <div class="info text-white">
+                        <h4 class="text-orange-400 font-bold">Names:</h4>
+                        <h4 class="font-light leading-7">Shimu Akter</h4>
+                        <h4 class="text-orange-400 font-bold mt-4">Emails:</h4>
+                        <h4 class="font-light leading-7">shimuahsa90@gmail.com</h4>
+                    </div>
+                    <div class="info text-white">
+                        <h4 class="text-orange-400 font-bold">Phones:</h4>
+                        <h4 class="font-light leading-7">+880 1953659582</h4>
+                        <h4 class="text-orange-400 font-bold mt-4">Linkdin:</h4>
+                        <h4 class="font-light leading-7">https//shimu</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- about section end -->
+    <!-- project section start -->
+    <div class="project_section container mx-auto py-25 bg-[#0A0A0A] ">
+        <div class="project_info_img flex flex-col justify-center items-center relative ">
+            <div class="project_heading text-white text-center text-3xl ">
+                <!-- <div class="project_heading text-white text-center text-3xl w-full mx-auto absolute top-18"> -->
+                <h1 class="">Let's Work Together On Your Next Project</h1>
+            </div>
+            <div class="project_btn absolute -bottom-7 py-3 px-5 bg-orange-400 font-semibold text-1xl">
+                <button type="button" class="text-white"><a href="#">Hire Me Now</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- project section end -->
+    <!-- contact section start -->
+    <div class="form_description container mx-auto py-20 bg-[#0A0A0A]">
+        <h1 class="form_heading text-white text-center text-5xl font-bold mb-13">Send Me A Message</h1>
+        <form class="m-4">
+            <div class="form_info flex justify-between items-center gap-4 mb-7">
+                <fieldset class="w-full">
+                    <p class="text-white text[20px] font-semibold mb-2">Name :</p>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" class="bg-neutral-900">
+                </fieldset>
+                <fieldset class="w-full">
+                    <p class="text-white text[20px] font-semibold mb-2">Email:</p>
+                    <input type="email" name="Email" id="email" placeholder="Enter Your Email" class="bg-neutral-900">
+                </fieldset>
+            </div>
+            <p class="text-white text[20px] font-semibold mb-1">Submit File:</p>
+            <input type="file" name="file" id="file" placeholder="submit your file"
+                class="bg-neutral-900 w-full h-[60px] mb-7">
+            <p class="text-white text[20px] font-semibold">Message:</p>
+            <textarea name="message" id="message" rows="10" cols="30" placeholder="Write Somthing"
+                class="bg-neutral-900 w-full h-auto"></textarea>
+            <button type="submit" class="form_btn bg-orange-400 text-amber-50 font-semibold mt-6 ">Submit Your
+                Information</button>
+        </form>
+    </div>
+    <!-- contact section start -->
+    <!-- footer section -->
+    <footer class="container mx-auto text-white text-center py-8 bg-[#0A0A0A]">
+        <hr>
+        <p>© 2026 Shimu | Web Developer</p>
+    </footer>
+    <!-- footer section end -->
+</body>
+
+</html>

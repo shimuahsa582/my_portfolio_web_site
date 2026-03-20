@@ -1,0 +1,185 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.banner_description {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../image/bg.jpg) center/ cover no-repeat;
+    /* background: linear-gradient(#0A0A0A, #0A0A0A), url(../image/bg.jpg) center/ cover no-repeat; */
+    position: absolute;
+    top: 0;
+    opacity: 0.9;
+    z-index: 5;
+
+}
+
+/* skill setion */
+.skill_item a {
+    font-size: 16px;
+    transition: font-size 2s ease-in-out 0.5s;
+}
+
+.skill_item a:hover {
+    font-size: 20px;
+}
+
+/* about section */
+.about_left img {
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about_h1 {
+    display: inline-block;
+    border: 2px solid white;
+    padding: 12px;
+    transition: border 2s linear 0.5s;
+}
+
+.about_h1:hover {
+    border: 2px solid orange;
+}
+
+/* project section */
+.project_info_img {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../image/keybord1.jpg) center/ cover no-repeat;
+    width: 100%;
+    height: 200px;
+}
+
+/* contact section */
+.form_info input {
+    padding: 18px 20px;
+    width: 100%;
+}
+
+.form_btn {
+    padding: 18px 22px;
+    border-radius: 31px;
+}
+
+hr {
+    color: rgb(46, 45, 45);
+}
+
+/* media qurery */
+/* sm devic 40rem (640px) */
+@media screen and (max-width:640px) {
+
+    /* banner section */
+    .left_info p {
+        width: 450px;
+        text-align: center;
+    }
+
+    .right_info img {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    /* skill section */
+    .skill_description .skill_item {
+        width: 380px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    /* about section */
+    .about_info {
+        max-width: 373px;
+        justify-content: space-evenly;
+    }
+
+    .about_right {
+        margin: 10px 15px 0px;
+    }
+
+    .about_right p {
+        max-width: 420px;
+        font-size: 16px;
+        padding: 15px 0px;
+    }
+
+    .about_left {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about_description {
+        padding: 25px;
+    }
+
+    /* project section */
+    .project_section {
+        padding: 30px 0px 50px;
+    }
+
+    .form_btn {
+        width: 100%;
+        margin: 15px auto;
+
+    }
+}
+
+/* md devic48rem (768px) */
+@media screen and (min-width:641px) and (max-width:768px) {
+
+    /* home section */
+    .navbar h1 {
+        font-size: 30px;
+    }
+
+    .author_name {
+        font-size: 35px;
+    }
+
+    /* about section */
+    .about_right {
+        justify-content: center;
+        align-items: center;
+        margin: 12px 20px 0px;
+    }
+
+    .about_right p {
+        font-size: 16px;
+        padding: 15px 0px;
+    }
+
+    /* skill section */
+    .skill_description .skill_item {
+        width: 360px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+}
+
+/* lg devic 64rem (1024px) */
+/* xl devic 80rem (1280px) */
+/* 2xl devic 96rem (1536px) */
