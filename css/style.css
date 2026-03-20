@@ -104,16 +104,20 @@ hr {
     }
 
     /* skill section */
-    .skill_description .skill_item {
-        width: 380px;
+    .skill_item {
+        width: 350px;
         margin: 0 auto;
-        padding-bottom: 20px;
+        padding: 0px;
     }
 
-    /* about section */
     .about_info {
-        max-width: 373px;
+
+        max-width: 274px;
         justify-content: space-evenly;
+    }
+
+    .about_left img {
+        width: 46%;
     }
 
     .about_right {
@@ -127,7 +131,7 @@ hr {
     }
 
     .about_left {
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -138,6 +142,11 @@ hr {
     /* project section */
     .project_section {
         padding: 30px 0px 50px;
+    }
+
+    /* contact section */
+    h1.form_heading {
+        font-size: 33px;
     }
 
     .form_btn {
@@ -154,7 +163,9 @@ hr {
     .navbar h1 {
         font-size: 30px;
     }
-
+        .navbar ul{
+            display: none;
+        }
     .author_name {
         font-size: 35px;
     }

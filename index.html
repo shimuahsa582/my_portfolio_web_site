@@ -20,9 +20,9 @@
     <!-- home section start -->
     <header class="container mx-auto">
         <!-- navbar section -->
-        <nav class="navbar flex justify-between items-center p-4 shadow ">
+        <nav class="navbar flex justify-between items-center p-4 shadow">
             <h1 class="lg:text-4xl text-black font-bold">Shimu</h1>
-            <ul class="flex gap-7 cursor-pointer">
+            <ul class="gap-7 cursor-pointer hidden md:flex">
                 <li class="hover:text-blue-600"><a href="#home">Home</a></li>
                 <li class="hover:text-blue-600"><a href="#skills">Skills</a></li>
                 <li class="hover:text-blue-600"><a href="#about">About</a></li>
@@ -30,7 +30,9 @@
                 <li class="hover:text-blue-600"><a href="#contact">Contact</a></li>
 
             </ul>
+            <span class="block md:hidden"><i class="fa-solid fa-bars"></i></span>
         </nav>
+
         <!-- banner section -->
         <div class="banner grid md:grid-cols-1 lg:grid-cols-2  justify-center items-center pt-2">
             <div class="banner_description grid md:grid-cols-1 lg:grid-cols-2  justify-center items-center">
