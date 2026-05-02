@@ -13,15 +13,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- css link -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
 <body>
-    <!-- home section start -->
+    <!-- header section start -->
     <header class="container mx-auto">
         <!-- navbar section -->
         <nav class="navbar flex justify-between items-center p-4 shadow">
-            <h1 class="lg:text-4xl text-black font-bold">Shimu</h1>
+            <h1 class="brandHeader lg:text-4xl text-black font-bold">Shimu</h1>
             <ul class="gap-7 cursor-pointer hidden md:flex">
                 <li class="hover:text-blue-600"><a href="#home">Home</a></li>
                 <li class="hover:text-blue-600"><a href="#skills">Skills</a></li>
@@ -36,7 +37,7 @@
         <!-- banner section -->
         <div class="banner grid md:grid-cols-1 lg:grid-cols-2  justify-center items-center pt-2">
             <div class="banner_description grid md:grid-cols-1 lg:grid-cols-2  justify-center items-center">
-                <div class="left_info pt-3 text-center">
+                <div class="left_info pt-4 text-center">
                     <h1 class=" author_name lg:text-6xl font-bold text-white mb-5">I'm Shimu Akter</h1>
                     <p class="lg:text-1xl font-medium leading-[190%] text-gray-100 w-[560px] mx-auto">
                         I
@@ -49,11 +50,11 @@
                         responsive websites and continuously improving my programming skills.</p>
                     <div class="btn pt-7">
                         <button type="button"
-                            class="bg-orange-400 text-white font-semibold py-2 px-4 rounded-lg mr-3"><i
+                            class="orangeButton bg-orange-400 text-white font-semibold py-2 px-4 rounded-lg mr-3 cursor-pointer"><i
                                 class="fa-solid fa-phone"></i> Contact
                             Me</button>
                         <button type="button"
-                            class="bg-orange-400 text-white font-semibold py-2 px-4 rounded-lg">Dowmload
+                            class="orangeButton bg-orange-400 text-white font-semibold py-2 px-4 rounded-lg cursor-pointer">Dowmload
                             CV <i class="fa-solid fa-download"></i></button>
                     </div>
                 </div>
@@ -63,7 +64,7 @@
             </div>
         </div>
     </header>
-    <!-- home section end -->
+    <!--header section end -->
     <!-- skills section start -->
     <main class="skills container mx-auto bg-[#0A0A0A] py-20">
         <!-- skill heading  section-->
@@ -143,7 +144,7 @@
         <!-- about description part -->
         <div class="about_description grid md:grid-cols-1 lg:grid-cols-2 justify-between items-center pb-22">
             <div class="about_left flex justify-center items-center">
-                <img src="image/profile.jpg" alt="profile" class="h-[450px] shadow-gray-200">
+                <img src="image/profile.jpg" alt="profile" class="aboutImg h-[450px] shadow-gray-200">
             </div>
             <div class="about_right flex flex-col items-start justify-start">
                 <h1 class=" about_h1 text-2xl text-white font-semibold">Hi
@@ -164,7 +165,7 @@
                         <h4 class="text-orange-400 font-bold mt-4">Emails:</h4>
                         <h4 class="font-light leading-7">shimuahsa90@gmail.com</h4>
                     </div>
-                    <div class="info text-white">
+                    <div class="aboutRight info text-white">
                         <h4 class="text-orange-400 font-bold">Phones:</h4>
                         <h4 class="font-light leading-7">+880 1953659582</h4>
                         <h4 class="text-orange-400 font-bold mt-4">Linkdin:</h4>
@@ -182,7 +183,8 @@
                 <!-- <div class="project_heading text-white text-center text-3xl w-full mx-auto absolute top-18"> -->
                 <h1 class="">Let's Work Together On Your Next Project</h1>
             </div>
-            <div class="project_btn absolute -bottom-7 py-3 px-5 bg-orange-400 font-semibold text-1xl">
+            <div
+                class="project_btn  orangeButton absolute -bottom-7 py-3 px-5 bg-orange-400 font-semibold text-1xl cursor-pointer">
                 <button type="button" class="text-white"><a href="#">Hire Me Now</a></button>
             </div>
         </div>
@@ -191,23 +193,25 @@
     <!-- contact section start -->
     <div class="form_description container mx-auto py-20 bg-[#0A0A0A]">
         <h1 class="form_heading text-white text-center text-5xl font-bold mb-13">Send Me A Message</h1>
-        <form class="m-4">
+        <form class=" fullForm m-4">
             <div class="form_info flex justify-between items-center gap-4 mb-7">
                 <fieldset class="w-full">
                     <p class="text-white text[20px] font-semibold mb-2">Name :</p>
-                    <input type="text" id="name" name="name" placeholder="Enter Your Name" class="bg-neutral-900">
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name"
+                        class="bg-neutral-900 text-gray-500">
                 </fieldset>
                 <fieldset class="w-full">
                     <p class="text-white text[20px] font-semibold mb-2">Email:</p>
-                    <input type="email" name="Email" id="email" placeholder="Enter Your Email" class="bg-neutral-900">
+                    <input type="email" name="Email" id="email" placeholder="Enter Your Email"
+                        class="bg-neutral-900 text-gray-500">
                 </fieldset>
             </div>
             <p class="text-white text[20px] font-semibold mb-1">Submit File:</p>
             <input type="file" name="file" id="file" placeholder="submit your file"
-                class="bg-neutral-900 w-full h-[60px] mb-7">
+                class="bg-neutral-900 text-gray-800 w-full h-[60px] mb-7">
             <p class="text-white text[20px] font-semibold">Message:</p>
             <textarea name="message" id="message" rows="10" cols="30" placeholder="Write Somthing"
-                class="bg-neutral-900 w-full h-auto"></textarea>
+                class="bg-neutral-900 text-gray-500 w-full h-auto"></textarea>
             <button type="submit" class="form_btn bg-orange-400 text-amber-50 font-semibold mt-6 ">Submit Your
                 Information</button>
         </form>

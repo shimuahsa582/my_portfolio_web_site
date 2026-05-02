@@ -20,6 +20,7 @@ body {
 
 }
 
+/* banner section */
 .banner {
     width: 100%;
     height: 500px;
@@ -32,11 +33,20 @@ body {
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../image/bg.jpg) center/ cover no-repeat;
-    /* background: linear-gradient(#0A0A0A, #0A0A0A), url(../image/bg.jpg) center/ cover no-repeat; */
     position: absolute;
     top: 0;
     opacity: 0.9;
     z-index: 5;
+
+}
+
+.orangeButton {
+    transition: 0.5s;
+}
+
+.orangeButton:hover {
+    background: none;
+    border: 1px solid white;
 
 }
 
@@ -51,7 +61,7 @@ body {
 }
 
 /* about section */
-.about_left img {
+.aboutImg {
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -84,113 +94,10 @@ body {
     border-radius: 31px;
 }
 
+input#file {
+    padding: 10px 8px 0px;
+}
+
 hr {
     color: rgb(46, 45, 45);
 }
-
-/* media qurery */
-/* sm devic 40rem (640px) */
-@media screen and (max-width:640px) {
-
-    /* banner section */
-    .left_info p {
-        width: 450px;
-        text-align: center;
-    }
-
-    .right_info img {
-        margin-top: 20px;
-        justify-content: center;
-    }
-
-    /* skill section */
-    .skill_item {
-        width: 350px;
-        margin: 0 auto;
-        padding: 0px;
-    }
-
-    .about_info {
-
-        max-width: 274px;
-        justify-content: space-evenly;
-    }
-
-    .about_left img {
-        width: 46%;
-    }
-
-    .about_right {
-        margin: 10px 15px 0px;
-    }
-
-    .about_right p {
-        max-width: 420px;
-        font-size: 16px;
-        padding: 15px 0px;
-    }
-
-    .about_left {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .about_description {
-        padding: 25px;
-    }
-
-    /* project section */
-    .project_section {
-        padding: 30px 0px 50px;
-    }
-
-    /* contact section */
-    h1.form_heading {
-        font-size: 33px;
-    }
-
-    .form_btn {
-        width: 100%;
-        margin: 15px auto;
-
-    }
-}
-
-/* md devic48rem (768px) */
-@media screen and (min-width:641px) and (max-width:768px) {
-
-    /* home section */
-    .navbar h1 {
-        font-size: 30px;
-    }
-        .navbar ul{
-            display: none;
-        }
-    .author_name {
-        font-size: 35px;
-    }
-
-    /* about section */
-    .about_right {
-        justify-content: center;
-        align-items: center;
-        margin: 12px 20px 0px;
-    }
-
-    .about_right p {
-        font-size: 16px;
-        padding: 15px 0px;
-    }
-
-    /* skill section */
-    .skill_description .skill_item {
-        width: 360px;
-        margin: 0 auto;
-        padding-bottom: 20px;
-    }
-
-}
-
-/* lg devic 64rem (1024px) */
-/* xl devic 80rem (1280px) */
-/* 2xl devic 96rem (1536px) */
