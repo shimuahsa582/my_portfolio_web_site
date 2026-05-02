@@ -22,7 +22,7 @@ It showcases my skills, projects, and contact information.
 - Font Awesome
 
 ##  Screenshot
-![Portfolio Screenshot]((image/portfolio_screenshot.png))
+![Portfolio Screenshot](https://github.com/shimuahsa582/my_portfolio_web_site/blob/11e3589d0fff8bcc07a6c2ae5d543e7c71fc1d2a/portfolio_screenshot.png)))
 
 
 ##  Live Demo
